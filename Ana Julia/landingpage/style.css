@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Red+Hat+Display:wght@700&display=swap');
+
+*{ /*reset do site*/
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box; /*Faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+    text-decoration: none; /*Tira qualquer pré-definição de decoração das listas e links*/
+}
+
+body {
+    font-size: 100%; /*Essa propriedaqde só alterou o tamanho da fonte do menu*/
+    background: linear-gradient(68.15deg, rgb(216, 243, 243) 30%, #c3d5db 70%); /*Deixa o fundo do corpo em degradê*/
+    color:#1b3a6e;
+}
+
+/*header*/
+.cabeçalho { /*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+    display: flex; /*Serve para criar layouts mais responsivos, que se adaptam ao tamanho de tela do usuário*/
+    flex-direction: row;/*Determina a direção em que os elementos flexíveis são dispostos*/
+    align-items: center; /*Alinha os elementos flexíveis ao longo do eixo TRANSVERSAL*/
+    justify-content: space-between; /*Alinha os elementos flexíveis ao longo do eixo PRINCIPAL*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #1b3a6e;
+}
+
+.cabeçalho-imagem {
+    height: 80px;
+    margin-left: 80px; /*Coloquei para alinhar "cabeçalho-imagem" com "principal-seção1-titulo"*/
+}
+
+.cabeçalho-menu {
+    /*As duas linhas seguintes são neessárias para determinar o espaço entre as ancoras do menu*/
+    display: flex; 
+    flex-direction: row;
+    margin-right: 30px;
+    background-color: azure;
+    padding: 13px;
+    box-shadow: 4px 4px 4px  #1b3a6e;
+    border-radius: 5px;
+    gap: 32px;
+}
+
+.cabeçalho-menu-item {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    color: #1b3a6e;
+}
+
+a:hover{
+    color:rgb(4, 112, 184)
+}
+
+/*main*/
+.principal {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.principal-seção1 {
+    font-family: 'Red Hat Display', sans-serif;
+    margin-left: 80px;
+}
+
+.principal-seção1-titulo {
+    padding-top: 10px;
+    font-size: 70px;
+    /* font-size: 5vw; O tamanho do texto seguirá o tamanho da janela do navegador*/
+}
+
+.principal-seção1-subtitulo {
+    font-size: 30px;
+
+}
+
+.principal-seção2 {
+    font-family:'Barlow Semi Condensed', sans-serif;
+    padding-left: 40px;
+}
+
+.principal-seção2-titulo {
+    font-size: 39px;
+}
+
+.principal-seção2-paragrafo {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.principal-seção2-botao {
+    background-color: #1b3a6e;
+    color: #f3fbfb;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #1b3a6e;
+    width: 100px;
+    height: 25px;
+    font-size: 17px;
+}
+
+.formulario {
+    border: 2px solid #1b3a6e;
+    background-color: azure;
+    width: 230px;
+    height: 28px;
+    font-size: 17px;
+    padding: 8px;
+    /*box-shadow: 1px 1px 1px  #1b3a6e;*/
+    border-radius: 5px;
+}
+
+/*footer*/
+.rodapé {
+    padding: 20px;
+    border-top: 4px solid #1b3a6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodapé-titulo {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.rodapé-imagem-ajustada {
+    height: 80px;
+    padding: 10px;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.rodapé-imagem {
+    height: 90px;
+    padding: 10px;
+    gap: 20px;
+    max-width: 100%; /*A imagem ficará em uma escala menor, se necessário, mas nunca ficará maior do que o tamanho original */
+}
+
+
+
+
