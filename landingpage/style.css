@@ -1,0 +1,194 @@
+/* geral */
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+strong {
+    color: rgb(247, 122, 5)
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    background-image: url(/landingpage1/Imagens/R.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    height: calc(90vh)
+}
+
+/* Topo */
+
+header{
+    display:flex;
+    width: 100%;
+    background-color: none;
+}
+
+
+ul {
+    display:flex;
+    list-style-type: none;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+
+li a{
+    display:flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: none;
+    padding: 12.5px;
+    text-align: center;
+    font-size: 1.5vmax;
+    float: left;    
+    left: 5px
+}
+
+li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(247, 122, 5);
+    border: 2px solid rgba(7, 143, 36, 0.826);
+    box-shadow: 2px 2px 3px rgba(7, 143, 36, 0.826);
+}
+
+li h1{
+    display:flex;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    font-size: 2vmax;
+    float: left; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 5px;
+    color: rgb(247, 122, 5);
+    box-shadow: 3px 2px 3px rgba(7, 143, 36, 0.826);
+    border:2px solid rgba(7, 143, 36, 0.826)
+}
+
+
+.links{
+    display: flex;
+    align-items: center;
+}
+
+#login {
+    display: flex;
+    margin-left: 1.5vmax;
+    border-radius: 10px;
+}
+
+#perguntas {
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    border-radius: 10px;
+}
+
+#contato {
+    display: flex;
+    margin-right: 1.5vmax;
+    border-radius: 10px;
+
+}
+
+/* formulário */
+
+.bloco {
+    display:flex;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-left: 2.3vmax;
+    border-radius: 10px;
+    border: 2px solid rgba(7, 143, 36, 0.826);
+    box-shadow: 3px 2px 3px rgba(7, 143, 36, 0.826);
+    margin-left: 5vmax;
+    margin-top: 20px;    
+    color: rgba(7, 143, 36, 0.826);
+    flex-direction: column;
+    left: 25px;
+    width: 47vmax;
+}
+
+.titulo2 {
+    font-size: 2.3vmax;
+}
+
+.conteudo {
+    font-size: 1.6vmax;
+}
+
+.form {
+    display: flex;
+    font-size: 1.6vmax;
+    width: 10vmax;
+    margin-top: 1vmax;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 20vmax;
+}
+
+#data {
+    width: 15vmax;
+}
+
+#email {
+    width: 25vmax;
+}
+
+label {
+    display: flex;
+    margin-top: 5px;
+}
+
+#button {
+    display: block;
+    width: 125px;
+    height: 45px;
+    font-size: 16px;
+    color:rgba(7, 143, 36, 0.826);
+    padding: 10px;
+    margin-top: 1.7vmax;
+    margin-bottom: 1vmax;
+    background-color: rgba(255, 255, 255, 0.826);
+    border: 3px solid rgb(247, 122, 5);
+    border-radius: 20px;
+}
+
+#button:hover {
+    box-shadow: 2px 2px 3px rgb(247, 122, 5);
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    font-size: 1.6vmax;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.5px;
+}
