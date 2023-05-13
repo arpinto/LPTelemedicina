@@ -95,7 +95,7 @@ body {
 #page-header {
     position: relative;
     background-color: var(--color-light-black);
-    background-image: url(../../../images/telemedicina\ \(1\).png);
+    background-image: url(/Leila/img/telemedicinabackground.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
