@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: large;
+}
+
+body{
+background-color: rgb(20, 55, 104);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+header{
+    grid-area: header;
+    background-color: rgba(158, 158, 158, 0.726);
+    border-bottom: solid 2px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px;
+    margin-right: 150px;
+}
+
+.title{
+    display: flex;
+    justify-content: baseline;
+    gap: 50px;
+}
+.title-stt{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-top: 10px;
+}
+
+.title h1{
+    color: white;
+    font-size: 3vmax;
+}
+
+.title h2{
+    color: rgb(49, 49, 49);
+    font-size: 2vmax;
+}
+
+.title img{
+    width: 20vmax;
+}
+
+.list ul,li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+    
+}
+
+.list a{
+    font-size: 1.2vmax;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.list a:hover{
+    width: 4vmax;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(20, 55, 104);
+    color: rgb(255, 255, 255);
+    transition: 0.5s all;
+    text-align: center;
+}
+
+.forms{
+    width: 350px;
+}
+
+.forms form{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 2vmax;
+}
+
+.forms input{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+.r-side{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.img-r{
+    margin: 50px;
+    width: 25vmax;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.527);
+}
+
+.texts{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2vmax;
+}
+
+.texts h2{
+    color: rgb(110, 178, 233);
+    font-size: 60px;
+}
+
+.texts p{
+    margin-top: 30px;
+    color: aliceblue;
+    font-size: 20px;
+    width: 65%;
+    margin-bottom: 60px;
+}
+
+input[type="submit"]{
+    color: rgb(163, 163, 163);
+    width: 90px;
+    border: 2px solid rgb(141, 141, 141);
+    background-color: transparent;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    width: 90px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(110, 178, 233);
+    color: white;
+    font-weight: bold;
+    transition: 0.5s all;
+    cursor: pointer;
+}
